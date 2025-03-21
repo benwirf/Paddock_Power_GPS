@@ -82,7 +82,7 @@ def calculate_homerange_area_percentage(paddock_lyr, home_range_lyr):
 
 #############################################################################################################
 
-output_csv = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/home_range_geopackage_files/BIG_MUDGEE/Big_Mudgee_homerange_areas.csv'
+output_csv = r'Paddock_Power_GPS/home_range_geopackage_files/BIG_MUDGEE/Big_Mudgee_homerange_areas.csv'
 results_tbl = open(output_csv, mode='w', newline='')
 writer = csv.writer(results_tbl)
 writer.writerow(['Paddock',
