@@ -11,7 +11,7 @@ project = QgsProject.instance()
 
 months_dict = dict((month, index) for index, month in enumerate(calendar.month_name) if month)
 
-homerange_source_folder = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/home_range_geopackage_files/GRASSY'
+homerange_source_folder = r'Paddock_Power_GPS/home_range_geopackage_files/GRASSY'
 
 period_1_months = ['June', 'July', 'August', 'September', 'October', 'November', 'December']
 period_2_months = ['January', 'February', 'March', 'April', 'May']
@@ -197,7 +197,7 @@ def calculate_homerange_land_type_percentage(paddock_lyr, home_range_lyr, land_t
     return homerange_land_types
 
 #############################################################################################################
-land_type_src = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/Land_Types/Dissolved_by_land_type/grassy_land_types.gpkg'
+land_type_src = r'Paddock_Power_GPS/Land_Types/Dissolved_by_land_type/grassy_land_types.gpkg'
 land_type_lyr = QgsVectorLayer(land_type_src, 'land_types', 'ogr')
 output_csv = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/home_range_geopackage_files/GRASSY/Grassy_homerange_land_types.csv'
 results_tbl = open(output_csv, mode='w', newline='')
