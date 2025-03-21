@@ -11,7 +11,7 @@ project = QgsProject.instance()
 
 months_dict = dict((month, index) for index, month in enumerate(calendar.month_name) if month)
 
-homerange_source_folder = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/home_range_geopackage_files/BIG_MUDGEE'
+homerange_source_folder = r'Paddock_Power_GPS/home_range_geopackage_files/BIG_MUDGEE'
 
 period_1_months = ['June', 'July', 'August', 'September', 'October', 'November', 'December']
 period_2_months = ['January', 'February', 'March', 'April', 'May']
