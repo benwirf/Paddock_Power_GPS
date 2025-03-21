@@ -5,7 +5,7 @@ from datetime import datetime
 #print(iface.activeLayer().source())
 project = QgsProject.instance()
 
-gps_merged_lyr_uri = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/ALL_GPS_DATA_MERGED/all_with_distances.gpkg|layername=all_with_distances'
+gps_merged_lyr_uri = r'Paddock_Power_GPS/ALL_GPS_DATA_MERGED/all_with_distances.gpkg|layername=all_with_distances'
 gps_merged_lyr = QgsVectorLayer(gps_merged_lyr_uri, 'all_with_distances', 'ogr')
 
 single_day_layer = QgsVectorLayer('Point?crs=epsg:4326', 'March_2022', 'memory')
