@@ -11,7 +11,7 @@ project = QgsProject.instance()
 
 months_dict = dict((month, index) for index, month in enumerate(calendar.month_name) if month)
 
-homerange_source_folder = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/home_range_geopackage_files/GRASSY'
+homerange_source_folder = r'Paddock_Power_GPS/home_range_geopackage_files/GRASSY'
 
 period_1_months = ['June', 'July', 'August', 'September', 'October', 'November', 'December']
 period_2_months = ['January', 'February', 'March', 'April', 'May']
@@ -109,7 +109,7 @@ def calculate_homerange_area_percentage(paddock_lyr, home_range_lyr):
 
 #############################################################################################################
 
-output_csv = r'C:/Users/qw2/Desktop/Paddock_Power_GPS/home_range_geopackage_files/GRASSY/Grassy_homerange_stats.csv'
+output_csv = r'Paddock_Power_GPS/home_range_geopackage_files/GRASSY/Grassy_homerange_stats.csv'
 results_tbl = open(output_csv, mode='w', newline='')
 writer = csv.writer(results_tbl)
 writer.writerow(['Paddock',
